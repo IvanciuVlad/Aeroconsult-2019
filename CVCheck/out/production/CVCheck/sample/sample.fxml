@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="studentCode" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#openCV" prefHeight="25.0" prefWidth="161.0" text="Open" GridPane.rowIndex="3" />
+      <Label fx:id="message" GridPane.rowIndex="1" />
+      <Label text="Insert the 3 digit student code" />
+      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="Save" GridPane.rowIndex="4" onAction="#saveCV"/>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
