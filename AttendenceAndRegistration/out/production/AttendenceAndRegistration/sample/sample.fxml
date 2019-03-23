@@ -18,21 +18,5 @@
         <Label fx:id="studentCode" prefHeight="17.0" prefWidth="174.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
         <Label text="Attendence" GridPane.columnIndex="1" />
         <Label fx:id="studentAttendence" prefHeight="17.0" prefWidth="176.0" GridPane.columnIndex="2" />
-      <Button mnemonicParsing="false" onAction="#addAttendence" prefHeight="25.0" prefWidth="150.0" text="Add Attendence" GridPane.rowIndex="3" />
-      <Button mnemonicParsing="false" onAction="#deleteAttendence" prefHeight="25.0" prefWidth="150.0" text="Delete Attendence" GridPane.rowIndex="4" />
-      <Button mnemonicParsing="false" onAction="#noteTimeOfCheckOut" prefHeight="25.0" prefWidth="148.0" text="Check Out" GridPane.rowIndex="5" />
     </children>
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
 </GridPane>
