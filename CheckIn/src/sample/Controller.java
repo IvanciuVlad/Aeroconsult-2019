@@ -20,6 +20,9 @@ public class Controller implements Initializable{
     @FXML
     private TextField groupe;
 
+    @FXML
+    private Label code;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resource) {
@@ -29,19 +32,20 @@ public class Controller implements Initializable{
     public void addStudent(javafx.event.ActionEvent actionEvent) throws IOException {
         String filePath = "newpeople.csv";
         String csvSplitBy = ",";
-        String line = "";
-        int alreadySignedUp = 121;
         BufferedReader br = new BufferedReader(new FileReader(filePath));
         try {
+            String line;
             String newLine = "";
+            int studentCode = 0;
             while ((line = br.readLine()) != null) {
                 String[] student = line.split(csvSplitBy);
-                int studentCode = Integer.parseInt(student[0]) + 1;
-                line = studentCode + csvSplitBy + lastName.getText() + csvSplitBy + firstName.getText() + csvSplitBy + groupe.getText() + csvSplitBy +"0" +  System.getProperty("line.separator");
+                studentCode = Integer.parseInt(student[0]) + 1;
+                newLine = studentCode + csvSplitBy + lastName.getText() + csvSplitBy + firstName.getText() + csvSplitBy + groupe.getText() + System.getProperty("line.separator");
             }
             br.close();
+            code.setText(Integer.toString(studentCode));
             BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true));
-            bw.append(line);;
+            bw.append(newLine);
             bw.close();
 
         } catch (IOException e) {

@@ -31,7 +31,7 @@ public class Controller implements Initializable {
             if (Desktop.isDesktopSupported()) {
                 try {
                     if(student.exists()) //checks if pdf exists otherwise program throws error
-                        Desktop.getDesktop().open(student);//will open pdf in defautl windows aplication
+                        Desktop.getDesktop().open(student);//will open pdf in default windows application
                     else
                         message.setText("The file does not exists");
                 } catch (IOException ex) {
@@ -47,7 +47,7 @@ public class Controller implements Initializable {
         if(!checkForWrongInput()) {
             message.setText("");
             File student = findStudent();
-            String dest = System.getProperty("user.home") + "/Desktop" + student.getName() + ".pdf";
+            String dest = System.getProperty("user.home") + "/Desktop/CVuri/" + student.getName() + ".pdf";
             File to = new File(dest);//creates destination file
             try {
                 copyFile(student, to);

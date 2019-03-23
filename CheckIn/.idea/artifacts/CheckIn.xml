@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="CheckIn">
+    <output-path>$PROJECT_DIR$/out/artifacts/CheckIn</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="CheckIn" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="CheckIn.jar">
+        <element id="module-output" name="CheckIn" />
+      </element>
+    </root>
+  </artifact>
+</component>

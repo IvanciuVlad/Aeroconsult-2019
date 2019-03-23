@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label prefHeight="19.0" prefWidth="92.0" text="Nume" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField fx:id="lastName" GridPane.columnIndex="2" GridPane.rowIndex="1" />
@@ -16,6 +15,19 @@
       <Label text="Prenume" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Label prefHeight="17.0" prefWidth="44.0" text="Grupa" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <TextField fx:id="groupe" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Button  mnemonicParsing="false" onAction="#addStudent" text="Adauga" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#addStudent" text="Adauga" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="code" prefHeight="17.0" prefWidth="106.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
