@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="CheckIn.jar" size="3435" download="eager" />
+    <jar href="CheckIn.jar" size="3431" download="eager" />
   </resources>
   <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="CheckIn" />
   <update check="background"/>

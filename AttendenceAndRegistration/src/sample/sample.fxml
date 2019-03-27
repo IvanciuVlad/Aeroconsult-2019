@@ -14,7 +14,5 @@
         <Label fx:id="studentName" prefHeight="17.0" prefWidth="174.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
         <Label fx:id="message" prefHeight="17.0" prefWidth="149.0" />
         <Label fx:id="studentCode" prefHeight="17.0" prefWidth="174.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-        <Label text="Attendence" GridPane.columnIndex="1" />
-        <Label fx:id="studentAttendence" prefHeight="17.0" prefWidth="176.0" GridPane.columnIndex="2" />
     </children>
 </GridPane>

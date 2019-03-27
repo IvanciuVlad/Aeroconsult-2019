@@ -21,9 +21,6 @@ public class Controller implements Initializable {
     private Label studentCode;
 
     @FXML
-    private Label studentAttendence;
-
-    @FXML
     private Label message;
 
     @Override
@@ -33,7 +30,7 @@ public class Controller implements Initializable {
 
     public void checkCode(javafx.event.ActionEvent actionEvent) {
         if (!checkForWrongInput()) {
-            String filePath = "students.csv";
+            String filePath = "studenti.csv";
             File myFile = new File(filePath);
             if (myFile.exists()) {
                 String line = "";
@@ -46,7 +43,6 @@ public class Controller implements Initializable {
                         if (Integer.parseInt(student[0]) == Integer.parseInt(codeInput.getText())) {
                             studentName.setText(student[1] + " " + student[2]);
                             studentCode.setText(student[0]);
-                            studentAttendence.setText(student[3]);
                             break;
                         }
                     }
